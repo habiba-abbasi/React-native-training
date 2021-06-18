@@ -3,26 +3,19 @@ import { useState } from 'react';
 import {View, Button, StyleSheet, TextInput, Text} from 'react-native';
 
 const HomeScreen = ({navigation}) => {
-  const [data, setData] = useState('Habiba');
-  const [value, setValue] = useState('');
   
-      const UpdateText=()=>{
-        setData(value);
-      }
+     
       return (
         <View style={styles.containerView}>
-          <Text style={{fontWeight:'bold',  textAlign : 'center', fontSize: 25}}>Assignment 2</Text>
+          <Text style={{fontWeight:'bold',  textAlign : 'center', fontSize: 25}}>Assignment 3</Text>
 
-          <Text style={{ fontSize: 20, paddingTop: 20}}>Hello! this is  {data}</Text>
-          <TextInput placeholder="Enter Text"
-                    style={styles.input}
-                    onChangeText={text=> setValue(text)}
-                    multiline={true}/>
+          <Text style={{ fontSize: 20, paddingTop: 20}}>Hello! Need to check count?</Text>
+        
           <View style={styles.button}>
-          <Button 
-            title="Press me"
-            onPress={ UpdateText}
-          />
+          <Button
+        title="Go to Counter Demo"
+        onPress={() => navigation.navigate('Counter')}
+      />
           </View>
         </View>
       );
