@@ -27,12 +27,12 @@ const App = () => {
             <Stack.Screen
               name="Home"
               component={HomeScreen}
-              options={{ title: 'Welcome' }}
+              options={{ title: 'AJAX FETCH DEMO' }}
             />
             <Stack.Screen
               name="Counter"
               component={CounterScreen}
-              options={{ title: 'Counter Screen' }}
+              options={{ title: 'AXIOS DEMO' }}
             />
       </Stack.Navigator>
      </NavigationContainer>
